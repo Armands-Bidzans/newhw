@@ -72,26 +72,33 @@ void searchByField(const string& field, const string& value) {
 
 void mostPopularInGenre(const string& genre) {
     int maxPopularityIndex = -1;
-    int maxPopularity = -1; // Инициализация для корректного сравнения
+    int maxPopularity = -1;
+
     for (int i = 0; i < recordCount; ++i) {
-        bool isSameGenre = (videoStore[i].Genre == genre);
-        if (isSameGenre) {
+        // Проверяем, совпадает ли жанр фильма с указанным
+        if (videoStore[i].Genre == genre) {
             int currentPopularity = 0;
+
+            // Преобразуем строку Popularity в число
             for (char c : videoStore[i].Popularity) {
                 if (isdigit(c)) {
                     currentPopularity = currentPopularity * 10 + (c - '0');
                 }
                 else {
-                    currentPopularity = -1; // Помечаем невалидное значение
+                    currentPopularity = -1; // Если значение невалидное, ставим -1
                     break;
                 }
             }
+
+            // Проверяем, является ли текущий фильм более популярным
             if (currentPopularity > maxPopularity) {
                 maxPopularity = currentPopularity;
                 maxPopularityIndex = i;
             }
         }
     }
+
+    // Выводим результат
     if (maxPopularityIndex != -1) {
         cout << "Most popular film in genre " << genre << ":" << endl;
         cout << "Film Name: " << videoStore[maxPopularityIndex].FilmName << endl;
@@ -104,6 +111,7 @@ void mostPopularInGenre(const string& genre) {
         cout << "No films found in genre: " << genre << endl;
     }
 }
+
 
 int main() {
     int choice;
