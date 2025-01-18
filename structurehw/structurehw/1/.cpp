@@ -71,46 +71,46 @@ void searchByField(const string& field, const string& value) {
 }
 
 void mostPopularInGenre(const string& genre) {
-    int maxPopularityIndex = -1;
-    int maxPopularity = -1;
+    int maxPopularityIndex = -1; // Переменная для хранения индекса фильма с максимальной популярностью
+    int maxPopularity = -1; // Переменная для хранения значения максимальной популярности
 
     for (int i = 0; i < recordCount; ++i) {
-        // Проверяем, совпадает ли жанр фильма с указанным
+        // Проверяем, совпадает ли жанр текущего фильма с указанным
         if (videoStore[i].Genre == genre) {
-            int currentPopularity = 0;
+            string popularityStr = videoStore[i].Popularity; 
+            int currentPopularity = 0; // Текущая популярность фильма, начинаем с 0
 
-            // Преобразуем строку Popularity в число
-            for (char c : videoStore[i].Popularity) {
-                if (isdigit(c)) {
-                    currentPopularity = currentPopularity * 10 + (c - '0');
-                }
-                else {
-                    currentPopularity = -1; // Если значение невалидное, ставим -1
-                    break;
+            // Проходим по каждому символу в строке Popularity
+            for (size_t j = 0; j < popularityStr.length(); ++j) {
+                if (isdigit(popularityStr[j])) { // Если символ является цифрой
+                    // Преобразуем символ в число и добавляем к текущей популярности
+                    currentPopularity = currentPopularity * 10 + (popularityStr[j] - '0');
+                } else {
+                    currentPopularity = -1; // Устанавливаем -1, если найден нецифровой символ
+                    break; 
                 }
             }
 
-            // Проверяем, является ли текущий фильм более популярным
             if (currentPopularity > maxPopularity) {
                 maxPopularity = currentPopularity;
-                maxPopularityIndex = i;
+                maxPopularityIndex = i; // Запоминаем индекс фильма с максимальной популярностью
             }
         }
     }
 
-    // Выводим результат
+    // Проверяем, найден ли фильм с заданным жанром
     if (maxPopularityIndex != -1) {
-        cout << "Most popular film in genre " << genre << ":" << endl;
-        cout << "Film Name: " << videoStore[maxPopularityIndex].FilmName << endl;
-        cout << "Director: " << videoStore[maxPopularityIndex].Director << endl;
-        cout << "Genre: " << videoStore[maxPopularityIndex].Genre << endl;
-        cout << "Popularity: " << videoStore[maxPopularityIndex].Popularity << endl;
-        cout << "Price: " << videoStore[maxPopularityIndex].Price << endl;
-    }
-    else {
+        cout << "Most popular film in genre " << genre << ":" << endl; 
+        cout << "Film Name: " << videoStore[maxPopularityIndex].FilmName << endl; 
+        cout << "Director: " << videoStore[maxPopularityIndex].Director << endl; 
+        cout << "Genre: " << videoStore[maxPopularityIndex].Genre << endl; 
+        cout << "Popularity: " << videoStore[maxPopularityIndex].Popularity << endl; 
+        cout << "Price: " << videoStore[maxPopularityIndex].Price << endl; 
+    } else {
         cout << "No films found in genre: " << genre << endl;
     }
 }
+
 
 
 int main() {
