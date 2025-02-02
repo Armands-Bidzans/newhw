@@ -1,9 +1,12 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\lopuw\\Desktop\\new_hw\\structurehw\\",
+  "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\newhw\\structurehw\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A056C3DB-1557-4349-AB05-D2084B0BDFA1}|structurehw\\structurehw.vcxproj|C:\\Users\\lopuw\\Desktop\\new_hw\\structurehw\\structurehw\\1\\.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Downloads\\.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A056C3DB-1557-4349-AB05-D2084B0BDFA1}|structurehw\\structurehw.vcxproj|C:\\Users\\User\\Desktop\\newhw\\structurehw\\structurehw\\1\\.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A056C3DB-1557-4349-AB05-D2084B0BDFA1}|structurehw\\structurehw.vcxproj|solutionrelative:structurehw\\1\\.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -20,18 +23,27 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": ".cpp",
-              "DocumentMoniker": "C:\\Users\\lopuw\\Desktop\\new_hw\\structurehw\\structurehw\\1\\.cpp",
-              "RelativeDocumentMoniker": "structurehw\\1\\.cpp",
-              "ToolTip": "C:\\Users\\lopuw\\Desktop\\new_hw\\structurehw\\structurehw\\1\\.cpp",
-              "RelativeToolTip": "structurehw\\1\\.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAACAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\.cpp",
+              "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\.cpp",
+              "ToolTip": "C:\\Users\\User\\Downloads\\.cpp",
+              "RelativeToolTip": "..\\..\\..\\Downloads\\.cpp",
+              "ViewState": "AQIAAIQAAAAAAAAAAAAAANoAAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-01-14T07:46:31.98Z",
+              "WhenOpened": "2025-01-18T08:47:26.484Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": ".cpp",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\newhw\\structurehw\\structurehw\\1\\.cpp",
+              "RelativeDocumentMoniker": "structurehw\\1\\.cpp",
+              "ToolTip": "C:\\Users\\User\\Desktop\\newhw\\structurehw\\structurehw\\1\\.cpp",
+              "RelativeToolTip": "structurehw\\1\\.cpp",
+              "ViewState": "AQIAAEQAAAAAAAAAAAAwwFMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-01-14T07:46:31.98Z",
+              "EditorCaption": ""
             }
           ]
         }
