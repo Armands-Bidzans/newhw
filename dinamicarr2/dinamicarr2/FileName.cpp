@@ -1,6 +1,4 @@
 #include <iostream>
-#include <cstdlib>
-
 using namespace std;
 
 void printMatrix(int** matrix, int rows, int cols) {
